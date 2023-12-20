@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,27 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.anim_gradient {
+  background: linear-gradient(
+    120deg,
+    hsla(280, 84%, 41%, 1) 0%,
+    hsla(218, 97%, 56%, 1) 100%
+  );
+  background-size: "200% 200%";
+  animation: "gradient 2s ease infinite";
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

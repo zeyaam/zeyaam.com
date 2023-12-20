@@ -1,18 +1,31 @@
-import "./App.css";
+import "./App.scss";
+import './animation.scss'
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   document.title = "Zeyaam Shahid";
+
   const defElement = (
-    <header className="App-header">
-      Coming soon
-    </header>
+    <div className="app-main">
+      <header className="app-header">Coming soon</header>
+      <div>(This website is under development ;) )</div>
+    </div>
   );
+
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={defElement}/>
-      </Routes>
+      <div className="gradient-bg">
+        <div className="gradients-container">
+          <div className="gradient-1"></div>
+          <div className="gradient-2"></div>
+          <div className="gradient-3"></div>
+          <div className="gradient-4"></div>
+          {/* <div className="gradient-5"></div> */}
+        </div>
+        <Routes>
+          <Route path="/" element={defElement} />
+        </Routes>
+      </div>
     </div>
   );
 }
