@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+html,
+body,
+#root,
+.gradient-bg {
+  height: 100%;
+  clear: both;
+}
+
 :root {
   --color-bg1: rgb(108, 0, 162);
   --color-bg2: rgb(0, 17, 82);
@@ -11,9 +21,27 @@
   --blending: hard-light;
 }
 
+.gradient-bg {
+  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  height: 100%;
+}
+ 
+.app-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  backdrop-filter: blur(40px);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  overflow: auto;
+  font-family: 'Gabarito', sans-serif;
+}
+
 .app-header {
-  // min-height: 100vh;
-  margin-top: 30%;
+  margin-top: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,14 +49,10 @@
   font-size: calc(10px + 2vmin);
 }
 
-.app-main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  backdrop-filter: blur(15px);
-  color: white;
-  text-align: center;
+.app-body {
+  padding-top: 3vh;
 }
 
+.filler-element {
+  height: 20vh;
+}
