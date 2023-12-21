@@ -5,9 +5,9 @@ import { Routes, Route } from 'react-router-dom'
 function App () {
   document.title = 'Zeyaam Shahid'
 
-  const bodyFiller = [...Array(10).keys()].map(e => (
-    <div className='filler-element'>Some element</div>
-  ))
+  // const bodyFiller = [...Array(10).keys()].map(e => (
+  //   <div className='filler-element'>Some element</div>
+  // ))
 
   const defElement = (
     <div className='app-main'>
