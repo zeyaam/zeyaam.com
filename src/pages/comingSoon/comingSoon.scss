@@ -1,0 +1,36 @@
+
+.gradient-bg {
+  height: 100%;
+  background: linear-gradient(40deg, rgb(108, 0, 162), rgb(0, 17, 82));
+}
+ 
+.app-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  backdrop-filter: blur(40px);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  overflow: auto;
+  font-family: 'Gabarito', sans-serif;
+}
+
+.app-header {
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.app-body {
+  padding-top: 3vh;
+}
+
+.filler-element {
+  height: 20vh;
+}
