@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: zeyaam.com
-      DIST: build
+      DIST: dist
       REGION: us-east-2
       DIST_ID: E2OQFR35FGQGYQ
 
@@ -31,7 +31,7 @@ jobs:
     - name: Install Dependencies
       run: |
         node --version
-        npm install --force
+        npm ci
 
     - name: Build Static Website
       run: npm run build
@@ -40,7 +40,7 @@ jobs:
       run: |
         aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
 
-    - name: Copy files to the production website with the AWS CLI
+    - name: Invalidate CDN cache
       run: |
         aws cloudfront create-invalidation \
           --distribution-id ${{ env.DIST_ID }} \

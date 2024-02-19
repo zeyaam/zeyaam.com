@@ -1,8 +1,8 @@
 import "./App.scss";
 import "./animation.scss";
 import { Routes, Route } from "react-router-dom";
-import { ComingSoon } from "./pages/comingSoon/comingSoon";
-// import { HomePage } from "./components/homePage/homePage";
+// import { ComingSoon } from "./pages/comingSoon/comingSoon";
+import { HomePage } from "./components/homePage/homePage";
 
 function App() {
   document.title = "Zeyaam Shahid";
@@ -14,7 +14,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<ComingSoon />} />
+        {/* <Route path="/" element={<ComingSoon />} /> */}
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </>
   );

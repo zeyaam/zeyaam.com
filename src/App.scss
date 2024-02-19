@@ -5,8 +5,8 @@ body,
 #root {
   height: 100%;
   clear: both;
-  background: #487eb0;
-  // background: linear-gradient(40deg, rgb(108, 0, 162), rgb(0, 17, 82));
+  background: #001131;
+  // background: linear-gradient(40deg, rgb(108, 0, 162), rgb(0, 17, 82)); 
 }
 
 :root {
@@ -25,10 +25,10 @@ body,
 }
 
 body {
-  width: 60%;
+  width: 60% !important;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  margin: auto;
+  margin: auto !important;
 }
 
 #root {
