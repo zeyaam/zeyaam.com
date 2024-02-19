@@ -25,15 +25,15 @@ body,
 }
 
 body {
-  width: 60% !important;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  margin: auto !important;
+  // width: 60% !important;
+  // border-left: 1px solid white;
+  // border-right: 1px solid white;
+  // margin: auto !important;
 }
 
 #root {
-  display: grid;
-  grid-template-rows: 120px auto 150px;
+  // display: grid;
+  // grid-template-rows: 120px auto 150px;
   user-select: none; // chrome and Opera
   -moz-user-select: none; // Firefox
   -webkit-text-select: none; // IOS Safari
