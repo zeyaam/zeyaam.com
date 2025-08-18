@@ -53,7 +53,7 @@ export const useAssetLoader = ({
     });
 
     // Preload fonts (if any)
-    fonts.forEach((fontFamily) => {
+    fonts.forEach(() => {
       // Use FontFace API if available
       if ('fonts' in document) {
         document.fonts.ready.then(checkAllLoaded);
