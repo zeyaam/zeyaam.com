@@ -1,0 +1,30 @@
+/* Color Variables */
+:root {
+  /* Background gradient colors */
+  --gradient-light: #091625;
+  --gradient-dark: #000918;
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db; /* gray-300 */
+  --text-muted: #9ca3af; /* gray-400 */
+  
+  /* Sidebar colors */
+  --sidebar-bg: rgba(31, 41, 55, 0.3); /* gray-800/30 */
+  --sidebar-border: rgba(55, 65, 81, 0.5); /* gray-700/50 */
+  
+  /* Timeline colors */
+  --timeline-line: #4b5563; /* gray-600 */
+  --timeline-dot: #0abde3; /* green-500 */
+  --timeline-dot-border: #1f2937; /* gray-800 */
+  
+  /* Card colors */
+  --card-bg: rgba(31, 41, 55, 0.5); /* gray-800/50 */
+  
+  /* Button colors */
+  --button-primary-bg: #00A4CA; /* green-600 */
+  --button-primary-hover: #008AB0; /* green-700 */
+  
+  /* Avatar placeholder */
+  --avatar-bg: #4b5563; /* gray-600 */
+}
